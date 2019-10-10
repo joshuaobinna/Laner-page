@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lancer page</title>
+        <link href="./bootstrap.min.css" rel="stylesheet">
+        <link href="./styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+        <style>
+            body { font-family: 'Ubuntu' 'Arial';}
+        .row { text-align: center; border-top: 2px solid silver; border-bottom: 2px solid silver;}
+        .container-fluid { width: 100%;}
+        .row li { list-style: none; margin: -10px 0; padding: 8px 0 }
+        .row li a { color: silver !important; font-size: 20px;}
+
+        .row li:nth-child(3) { border-left: 2px solid silver; border-right: 2px solid silver; }
+
+        .row li:nth-child(3) a { color: black !important; font-weight: 650; font-size: 19px; }
+
+        .row li:nth-child(4) { background-color: silver; }
+
+        .row li:nth-child(4) a { color: whitesmoke !important; font-weight: 600; }
+
+        .row li:nth-child(2) {border-left: 2px solid silver; }
+
+        .container { width: 66%; margin: 2% 17%; }
+
+        .container div { margin-bottom: 2%; }
+
+        .main-container { border: 2px solid silver; } 
+
+        .my-table { border-top: 2px solid silver; }
+
+        .my-table table { width: 70%; margin-left: 10px; }
+
+        .expenses { border-top: 2px solid silver; }
+
+        .expenses table { width: 55%; margin-left: 10px;  }
+
+        .expertise table { width: 55%; margin-left: 10px; }
+
+        .sub-container div table tbody td input { width: 100px;} 
+
+        tbody tr td input[placeholder] { font-size: 12px; text-align: center; } 
+
+        tbody tr td { font-size: 13px; } 
+
+        .long-input input {
+            width: 90%;
+            margin-left: 5%; 
+            margin-right: 5%; 
+            margin-top: 7%;
+            margin-bottom: 3%;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid silver;
+        }
+
+        .long-input input[placeholder='Required']{ text-align: right; }
+
+        .footer {border-top: 2px solid silver; margin-left: 10px; }
+        .footer h5 {
+            margin: 2% 0; 
+            font-size: 17px;
+        }
+        .button button { width: 135px; margin: 0 auto;
+            background-color: silver !important; color: whitesmoke;}
+        .button { width: 40%; margin: 0 40%;}
+
+        /* Ipad pro */
+        @media screen and (max-width: 1024px) {
+            .container { width: 80%; margin: 0 10%;}
+            .container div { margin-bottom: 5%; margin-top: 5%; }
+            .my-table table { width: 75%; margin-left: 10px; }
+            .expenses table { width: 58%; margin-left: 13px;}
+            .expertise table { width: 58%; margin-left: 13px; }
+        }
+        /* Ipad */
+        @media screen and (max-width: 768px) {
+        .container-fluid { width: 750px; margin-right: 25px;}
+        .container { width: 80%; margin-left: 50px;}
+        .long-input input { width: 80%; margin-left: 10%; margin-right: 10%;}
+        .my-table table { width: 80%; margin-left: 10px; }
+        .expenses table { width: 58%; margin-left: 13px;}
+        .expertise table { width: 58%; margin-left: 13px; }
+        .footer {border-top: 2px solid silver; margin-left: 14px; }
+        }
+        
+        /* Iphones */
+        @media screen and (max-width: 414px) {
+            .row { border: none; margin-left: 11px; }
+            h3 { font-size: 20px;}
+            h6 { font-size: 14px;}
+            .row li a { font-size: 13px;}
+            .row li:nth-child(3) { border-left: none; }
+            .row li:nth-child(2) {border-left: none; }
+            .container-fluid ul { width: 50%;}
+            .container-fluid ul li {border-top: 1px solid silver;}
+            .container-fluid ul li a { padding: auto;}
+            .container { width: 92%; margin-left: 16px;}
+            .long-input input { width: 70%; margin-left: 15%; margin-right: 15%;}
+            .my-table table { width: 100%; margin-left: 4px; }
+            .expenses table { width: 60%; margin-left: 8px;}
+            .expertise table { width: 60%; margin-left: 8px; }
+            tbody tr td { font-size: 11px; } 
+            .long-input input[placeholder]{ font-size: 13px; }
+            .footer h5 { font-size: 14px; }
+            .button button { width: 90px; font-size: 14px; }
+            .button { width: 30%; margin: 0 35%;}
+            }
+
+            @media screen and (max-width: 375px) {
+                .container { width: 100%; margin-left: 19px;}
+            }
+            @media screen and (max-width: 320px) {
+                .container { width: 100%; margin-left: 15px;}
+                .sub-container div table tbody td input { width: 80px;} 
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- nav -->
+        <div class="container-fluid">
+            <ul class="row navbar navbar-light">
+                <li class="col-md-1 nav-item">
+                    <a class="nav-link active" href="#">X</a>
+                </li>
+                <li class="col-md-1 nav-item">
+                    <a class="nav-link" href="#"><</a>
+                </li>
+                <li class="col-md-8 nav-item">
+                    <a class="nav-link" href="#">Create Estimate</a>
+                </li>
+                <li class="col-md-2 nav-item">
+                    <a class="nav-link" href="#">NEXT</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- the body -->
+       <div class="container">
+            <div>
+                <h3>Evaluation</h3>
+                <h6>Please input the required video in the form below</h6>
+            </div>
+            <div class="main-container">
+                <div class="long-input">
+                    <input type="text" placeholder="Required">
+                </div>
+                <div class="sub-container">
+                    <!-- first table -->
+                    <div class="my-table">
+                        <table class="table table-md table-borderless">
+                            <thead>
+                                <tr>
+                                <!-- <th>#</th> -->
+                                <th >Billing</th>
+                                <!-- <th>Last Name</th> -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <!-- <th scope="row">1</th> -->
+                                <td>How Long (in hours) will it take for you to power your device or equipmenr for this project</td>
+                                <td>
+                                    <input type="text" placeholder="Hours" class="form-control form-control-sm">
+                                </td>
+                                </tr>
+                                <tr>
+                                <!-- <th scope="row">2</th> -->
+                                <td>How Much do you charge per hours?</td>
+                                <td><input type="text" placeholder="NGN 0.00" class="form-control form-control-sm"></td>
+                                </tr>
+                                <td>Project Starts/Ends</td>
+                                <td><input type="date" placeholder="start date"  class="form-control form-control-sm" id="date"></td>
+                                <td><input type="date" placeholder="end date"  class="form-control form-control-sm" id="date"></td>
+                                </tr>
+                            </tbody>     
+                        </table>
+                    </div> 
+                    <!-- second table -->
+                    <div class="expenses">
+                        <table class="table table-sm table-borderless">
+                            <thead>
+                                <tr>
+                                <!-- <th>#</th> -->
+                                <th>Expenses</th>
+                                <!-- <th>Last Name</th> -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <!-- <th scope="row">1</th> -->
+                                    <td>How much will it take cost you to power your device or equipmenr for this project?</td>
+                                    <td><input type="text" placeholder="NGN 0.00" class="form-control form-control-sm"></td>
+                                </tr>
+                                <tr>
+                                <!-- <th scope="row">2</th> -->
+                                    <td>Are you subcontracting to anyone?</td>
+                                    <td><input type="text" placeholder="E.g. illustrator, consulting..." class="form-control form-control-sm"></td>
+                                </tr>
+                                <tr>
+                                <td>How much would be paid?</td>
+                                <td><input type="text" placeholder="NGN 0.00"  class="form-control form-control-sm"></td>
+                                </tr>
+                            </tbody>     
+                        </table> 
+                    </div>
+                    <div class="expertise">
+                        <table class="table table-sm table-borderless">
+                            <thead><th>Expertise</th></thead>
+                            <tbody>
+                                <tr>
+                                    <td>How many similar projects have you done before</td>
+                                    <td><input type="text" class="form-control form-control-sm"></td>
+                                </tr>
+                                <tr>
+                                    <td>Out of 5, How would you rate your experience level in executing this project</td>
+                                    <td><input type="number"  class="form-control form-control-sm"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="footer">
+                        <h5>Currency: <u>NGN</u></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="button"><button class="btn btn-lg">NEXT</button></div>
+       </div>
+        <script src="./bootstrap.min.js"></script>
+    </body>
+</html>
